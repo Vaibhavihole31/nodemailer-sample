@@ -1,0 +1,23 @@
+{
+  "name": "nodmailer-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaibhavihole31/nodmailer-sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaibhavihole31/nodmailer-sample/issues"
+  },
+  "homepage": "https://github.com/Vaibhavihole31/nodmailer-sample#readme",
+  "dependencies": {
+    "nodemailer": "^6.7.8"
+  }
+}
