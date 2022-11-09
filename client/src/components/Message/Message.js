@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Message.css';
-import headerImg from './gmail.png';
+import headerImg from './gmail-logo.png';
+import gamilImg from './gmail-img.png';
 import swal from "sweetalert";
 
 function Message() {
@@ -30,7 +31,9 @@ function Message() {
         <div className=' message-card '>
           <div className='row'>
             <div className='col-md-6'>
-              <h4><img className='gmail-img' src={headerImg} /> Gmail</h4>
+              <h4><img className='gmail-logo' src={headerImg} /> Gmail</h4>
+
+              <img className='gmail-img' src={gamilImg} />
             </div>
             <div className='col-md-4 send-message-card  mt-5 mb-3'>
               <form>

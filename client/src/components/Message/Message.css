@@ -18,6 +18,13 @@
     box-shadow: 1px 1px 4px 2px gray;
 }
 
-.gmail-img {
+.gmail-logo {
     height: 30px;
+}
+
+.gmail-img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
