@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import {useNavigate} from 'react-router-dom'
+import './Message.css'
 
 function Message() {
 
@@ -31,11 +31,14 @@ function Message() {
   return (
     <>
       <div className='container mt-5'>
-      <div className='login-card'>
+      <div className=' message-card '>
         <div className='row'>
-          <h2 className='text-center mt-5'>Login</h2>
-          <div className='col-md-6 mt-3'>
+          <div className='col-md-6'>
+
+          </div>
+          <div className='col-md-4 message-card  mt-5 mb-3'>
             <form>
+            <h4 className='text-center mt-5 mb-5'>New Message</h4>
               <div className="mb-3">
                 <input
                   type="email"
@@ -63,7 +66,7 @@ function Message() {
                   value={text} onChange={(e) => { setText(e.target.value) }}
                 />
               </div>
-              <button className="login-page-btn w-100 mb-3" type="button" onClick={send}>
+              <button className="login-page-btn btn btn-primary w-100 mb-3" type="button" onClick={send}>
                 <i class="fa-solid fa-right-to-bracket"></i> Send
               </button>
             </form>
