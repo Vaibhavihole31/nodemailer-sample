@@ -1,9 +1,9 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
-import path from 'path';
-
 dotenv.config()
+import path from 'path';
+const __dirname = path.resolve();
 
 const app = express()
 app.use(express.json())
