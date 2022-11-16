@@ -23,6 +23,7 @@ function Message() {
     setText("");
 
     swal("Message Send Successfully !!");
+
   }
 
   return (
@@ -31,9 +32,9 @@ function Message() {
         <div className=' message-card '>
           <div className='row'>
             <div className='col-md-6'>
-              <h4><img className='gmail-logo' src={headerImg} /> Gmail</h4>
+              <h5><img className='gmail-logo' src={headerImg} /> Gmail</h5>
 
-              <img className='gmail-img' src={gamilImg} />
+              <img className='gmail-img mt-5' src={gamilImg} />
             </div>
             <div className='col-md-4 send-message-card  mt-5 mb-3'>
               <form>

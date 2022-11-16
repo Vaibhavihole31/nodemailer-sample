@@ -1,6 +1,8 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import path from 'path';
+
 dotenv.config()
 
 const app = express()
@@ -40,6 +42,14 @@ app.post('/sendEmail', (req, res) => {
   })
 
 })
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '..', 'client', 'build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'client', 'build', 'index.html'))
+  });
+}
 
 const PORT = process.env.PORT || 5000
 
